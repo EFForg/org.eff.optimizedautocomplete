@@ -33,7 +33,6 @@ function optimizedautocomplete_civicrm_contactListQuery(&$query, $name, $context
     SELECT id, sort_name
     FROM civicrm_contact 
     WHERE sort_name LIKE '$name%'
-    OR display_name LIKE '$name%'
     AND is_deleted = 0
     ORDER BY sort_name LIMIT 0, 25";
   $dao = CRM_Core_DAO::executeQuery($sql);
@@ -133,7 +132,7 @@ function optimizedautocomplete_civicrm_contactListQuery(&$query, $name, $context
     if(array_key_exists($id, $cities)) {
       $display .= $cities[$id]." :: ";
     }
-    $contacts[$id] = rtrim($display, " :: ");
+    $contacts[$id] = ltrim(rtrim($display, " :: "), " :: ");
   }
 
   // insert into temp table
