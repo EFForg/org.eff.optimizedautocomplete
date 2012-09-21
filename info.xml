@@ -2,11 +2,11 @@
 <extension key="org.eff.optimizedautocomplete" type="module">
   <file>optimizedautocomplete</file>
   <name>Optimized Autocomplete</name>
-  <description>Optimize the autocomplete search box mysql queries so they're more efficient on large databases, however you loose search customization</description>
+  <description>Optimize autocomplete search box MySQL queries so they're more efficient on large databases</description>
   <license>GPLv3</license>
   <maintainer>
     <author>Micah Lee</author>
-    <email>micahflee@riseup.net</email>
+    <email>micah@eff.org</email>
   </maintainer>
   <releaseDate>2012-09-19</releaseDate>
   <version>1.0</version>
@@ -14,7 +14,7 @@
   <compatibility>
     <ver>4.2</ver>
   </compatibility>
-  <comments>This extension changes how autocomplete searches in CiviCRM work. The autocomplete search boxes appear in the CiviCRM admin bar, and in other places where you start typing to look up a contact.</comments>
+  <comments>This extension changes how autocomplete searches in CiviCRM work. The autocomplete search boxes appear in the CiviCRM admin bar, and in other places where you start typing to look up a contact. You lose the ability to customize how it works though.</comments>
   <civix>
     <namespace>CRM/Optimizedautocomplete</namespace>
   </civix>
